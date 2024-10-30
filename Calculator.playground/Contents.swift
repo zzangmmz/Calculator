@@ -24,3 +24,10 @@ class Calculator: AbstractOperation {
         return a / b
     }
 }
+
+let calculator = Calculator()
+
+print(calculator.addOperation(10, 20))
+print(calculator.subSubtractOperation(10, 20))
+print(calculator.multiplyOperation(10, 20))
+print(calculator.divideOperation(10, 20))
