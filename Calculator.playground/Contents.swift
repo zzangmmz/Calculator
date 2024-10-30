@@ -49,3 +49,12 @@ do {
 } catch CalculatorError.dividedByZero {
     print("0으로 나눴습니다.")
 }
+
+do {
+    print(try calculator.divideOperation(0, 10))
+} catch CalculatorError.zeroDivided {
+    print("0을 나눴습니다.")
+} catch CalculatorError.dividedByZero {
+    print("0으로 나눴습니다.")
+}
+
