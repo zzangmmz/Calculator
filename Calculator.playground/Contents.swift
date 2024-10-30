@@ -51,7 +51,7 @@ do {
 }
 
 do {
-    print(try calculator.divideOperation(0, 10))
+    print(try calculator.divideOperation(0, 10)) // 다른 에러 케이스 검출되는지 검사
 } catch CalculatorError.zeroDivided {
     print("0을 나눴습니다.")
 } catch CalculatorError.dividedByZero {
